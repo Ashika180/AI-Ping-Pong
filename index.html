@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background= "bg.jpeg">
+<center>
+<h3 class= "btn btn-warning" style= "font-family: comic sans ms; font-size: 30px !important; margin-left: 250px;"> AI Ping Pong Game </h3>
+<button data-toggle= "modal" data-target= "#myModal" class= "btn btn-success" style= "font-size: 20px; float: right; margin-top: 20px; margin-right: 20px !important; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"> Show Instructions </button>
+
+<br><br>
+
+<button onclick= "startGame()" class= "btn btn-info" style= "font-size: 19px; margin-left: 60px; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"> Start Game </button>
+<h3 id= "game_status"> </h3>
+<br>
+<button onclick= "restart()" class= "btn btn-success" style= "margin-left: 50px;"> Restart </button>
+<br><br>
+<div id= "canvas"></div>
+
+<br>
+<div id= "footer" style= "background-color: white; line-height: 2; margin: 0px;"> Created By Ashika Karuppaiah </div>
+<div id= "myModal" class= "modal fade">
+  <div class= "modal-dialog">
+     <div class= "modal-content">
+         <div class= "modal-header">
+            <button class= "close" data-dismiss= "modal"> &times; </button>
+          <h3> Instructions </h3>
+          <hr>
+<h4> 1. Keep your laptop screen staright.
+    <br><br>
+     2. Move yourself approximately 3-4 feet away from the laptop.
+     <br><br>
+     3. Move your right wrist in an ascending and decreasing manner, a red dot should appear on your right wrist.
+     <br><br>
+     4. Now press the play button, and again move yourself 3-4 feet away from the computer.
+     <br><br>
+     5. The red paddle is your paddle, that will move as per the movement of your right wrist.  
+     <img class="img-responsive" src= "pp.jpeg" style= "margin-top: 20px; width: 600px;">
+</h4>
+             <div class= "modal-body">
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</center>
+        <script src="main.js"></script>
+    </body>
+</html>

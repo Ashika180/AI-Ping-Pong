@@ -1,0 +1,19 @@
+body
+{
+background-size: cover;
+background-position: center;
+}
+
+canvas{
+    box-shadow: 5px 5px 18px white;
+    border: orange 2.5px solid;
+}
+
+.modal-dialog{
+width: 80%;
+}
+
+#game_status{
+margin-left: 50px;
+color: white;
+}
